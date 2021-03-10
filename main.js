@@ -6,15 +6,15 @@ function ageToAbilities(num) {
     let teen = 'You can drive but not vote.'
     let yAdult = 'You can vote but not rent a car.'
     let adult = 'You can do pretty much anything.'
-        if (num <= 15) {
-            return baby;
-        } else if(num <= 17){
+    if (num <= 15) {
+        return baby;
+    } else if (num <= 17) {
         return teen;
-        } else if(num <=24){
-            return yAdult;
-        } else if (num >=25){
-            return adult;
-        }
+    } else if (num <= 24) {
+        return yAdult;
+    } else if (num >= 25) {
+        return adult;
+    }
 }
 
 function oddIndices(arr) {
@@ -38,42 +38,49 @@ function numOddValues(arr) {
     return output;
 }
 
-function averageStringLength(arr){
+function averageStringLength(arr) {
+    let output = 0;
+    if (arr.length === 0) {
+        return 0;
+    } else {
+
+    }
 }
+
 
 function firstPunctuationIndex(){
+    
 }
-function getPlace(){
+function getPlace() {
 }
+        // ┌─────────────────────────────────────┐
+        // │ Do not modify code below this line. │
+        // └─────────────────────────────────────┘
 
-// ┌─────────────────────────────────────┐
-// │ Do not modify code below this line. │
-// └─────────────────────────────────────┘
+        if (typeof ageToAbilities === 'undefined') {
+            ageToAbilities = undefined;
+        }
+        if (typeof oddIndices === 'undefined') {
+            oddIndices = undefined;
+        }
+        if (typeof numOddValues === 'undefined') {
+            numOddValues = undefined;
+        }
+        if (typeof averageStringLength === 'undefined') {
+            averageStringLength = undefined;
+        }
+        if (typeof firstPunctuationIndex === 'undefined') {
+            firstPunctuationIndex = undefined;
+        }
+        if (typeof getPlace === 'undefined') {
+            getPlace = undefined;
+        }
 
-if (typeof ageToAbilities === 'undefined') {
-    ageToAbilities = undefined;
-}
-if (typeof oddIndices === 'undefined') {
-    oddIndices = undefined;
-}
-if (typeof numOddValues === 'undefined') {
-    numOddValues = undefined;
-}
-if (typeof averageStringLength === 'undefined') {
-    averageStringLength = undefined;
-}
-if (typeof firstPunctuationIndex === 'undefined') {
-    firstPunctuationIndex = undefined;
-}
-if (typeof getPlace === 'undefined') {
-    getPlace = undefined;
-}
-
-module.exports = {
-    ageToAbilities,
-    oddIndices,
-    numOddValues,
-    averageStringLength,
-    firstPunctuationIndex,
-    getPlace
-};
+        module.exports = {
+            ageToAbilities,
+            oddIndices,
+            numOddValues,
+            averageStringLength,
+            firstPunctuationIndex,
+            getPlace
+        };
