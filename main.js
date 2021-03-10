@@ -26,6 +26,16 @@ function oddIndices(arr){
     }return ar1;
 }
 
+function numOddValues (arr){
+    let arr1 = [];
+    let count = 0;
+    while(count > 0)
+        if (arr[i] % 2 === 0){
+            count+=1;
+    }
+    return count;
+}
+
 // ┌─────────────────────────────────────┐
 // │ Do not modify code below this line. │
 // └─────────────────────────────────────┘
