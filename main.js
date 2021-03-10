@@ -43,14 +43,19 @@ function averageStringLength(arr) {
     if (arr.length === 0) {
         return 0;
     } else {
-
+        for (i = 0; i < arr.length;i++){
+            output += arr[i].length
+        }
+        return output / arr.length;
     }
 }
 
 
-function firstPunctuationIndex(){
-    
+function firstPunctuationIndex(imOutOfTime){
+if (imOutOfTime[i] !== "?" || imOutOfTime[i] !== "." || imOutOfTime[i] !== "!")
+    return -1;
 }
+
 function getPlace() {
 }
         // ┌─────────────────────────────────────┐
