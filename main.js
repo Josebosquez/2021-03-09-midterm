@@ -52,8 +52,13 @@ function averageStringLength(arr) {
 
 
 function firstPunctuationIndex(imOutOfTime){
-if (imOutOfTime[i] !== "?" || imOutOfTime[i] !== "." || imOutOfTime[i] !== "!")
+    if (imOutOfTime[i] !== "?" || imOutOfTime[i] !== "." || imOutOfTime[i] !== "!"){
     return -1;
+    } else {
+        if (imOutOfTime[i] === "?" || imOutOfTime[i] === "." || imOutOfTime[i] === "!"){
+            return imOutOfTime[i];
+        } 
+}
 }
 
 function getPlace() {
